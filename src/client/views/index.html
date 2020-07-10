@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv=X-UA-Compatible content="ie=edge">
+  <title>Travel App</title>
+  <link rel="icon" href="media/favicon.ico">
+</head>
+
+<body>
+  <div class="container">
+    <div class="brand">
+      <h1 class="brand_name">Travel Weather App</h1>
+      <img src="../media/weather.svg" alt="" class="brand_logo">
+    </div>
+    <div class="boxes">
+      <section class="search_box">
+        <div class="inputs">
+          <div class="search_input destination_input">
+            <div class="image_label_div">
+              <img src="../media/flights.svg" alt="" class="input_svg">
+              <label>Your Travel Destination:</label>
+            </div>
+            <input id="city" type="text" value="" name="city" placeholder="Where to?">
+          </div>
+
+          <div class="search_input leaving_input">
+            <div class="image_label_div">
+              <img src="../media/hot air balloon.svg" alt="" class="input_svg">
+              <label>Departure Date:</label>
+            </div>
+            <input id="leaving" type="date" value="" placeholder="date" name="date">
+          </div>
+
+          <div class="search_input returning_input">
+            <div class="image_label_div">
+              <img src="../media/suitcase.svg" alt="" class="input_svg">
+              <label>Returning Date:</label>
+            </div>
+            <input id="returning" type="date" value="" placeholder="date" name="date">
+          </div>
+        </div>
+
+        <button class="continue">Continue</button>
+
+      </section>
+
+      <section class="result_box hidden">
+
+        <div class="img_container">
+          <img id="img">
+        </div>
+
+        <div class="search_results">
+          <div class="infos">
+            <img src="../media/flag.svg" alt="" class="info_svg">
+            <h3 id="country">Country: <span id="country_info"></span></h3>
+          </div>
+          <div class="infos">
+            <img src="../media/building.svg" alt="" class="info_svg">
+            <h3 id="city">City: <span id="city_info"> </span></h3>
+          </div>
+          <div class="infos">
+            <img src="../media/cloudy.svg" alt="" class="info_svg">
+            <h3 id="weather">Weather: <span id="weather_info"> </span></h3>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+</body>
+
+</html>
